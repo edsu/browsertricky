@@ -31,7 +31,7 @@ And run it!
 $ ./browsertricky mysite
 ```
 
-If you open http://localhost:9037 while the crawler is underway you should see a screencast of the browser.
+If you open http://localhost:9037 while the crawl is underway you should see a screencast of the browser.
 
 Read the browsertrix-crawler [documentation] for all the options you can put in your YAML configuration files. There are quite a few!
 
