@@ -20,7 +20,7 @@ That's not a terribly interesting example, so use the example config to create a
 cp config/example.yaml config/mysite.yaml
 ```
 
-Now edit the `config/mysite.yaml`:
+Edit the `config/mysite.yaml` adding information about a site you would like to archive:
 
 1. Change the name of the collection from `example` to `mysite`
 2. Change the `seeds` list to include a new URL like `https://mysite.com`
