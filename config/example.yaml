@@ -1,0 +1,5 @@
+collection: example
+generateWACZ: true
+screencastPort: 9037
+seeds:
+  - url: https://example.com/

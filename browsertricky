@@ -1,0 +1,5 @@
+#!/bin/bash
+
+VERSION=latest
+docker pull webrecorder/browsertrix-crawler:$VERSION
+docker run -p 9037:9037 -it -v $PWD:/crawls/ webrecorder/browsertrix-crawler:$VERSION crawl --config /crawls/config/$1.yaml
