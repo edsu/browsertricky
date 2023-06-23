@@ -1,7 +1,10 @@
 # browsertricky
 
-This is a tiny example that I've used to make it a bit easier to run
-[browsertrix-crawler] without needing to remember the Docker incantation.
+This is a tiny script and directory structure I've used to make it a bit easier
+to run and manage [browsertrix-crawler] for archiving websites without needing
+to remember the Docker incantation.
+
+If you'd like to use it:
 
 ```
 $ git clone https://github.com/edsu/browsertricky.git
