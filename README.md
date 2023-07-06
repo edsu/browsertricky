@@ -2,7 +2,8 @@
 
 This is a tiny script and directory structure I've used to make it a bit easier
 to run and manage [browsertrix-crawler] for archiving websites without needing
-to remember the Docker incantation.
+to remember the Docker incantation. It works with either Docker or Podman (and
+prefers Podman if it is available).
 
 If you'd like to use it:
 
@@ -12,7 +13,7 @@ $ cd browsertricky
 ./browsertricky example
 ```
 
-Now go to https://replayweb.page and load the WACZ file that was created at `collections/example/example.wacz`. 
+Now go to https://replayweb.page and load the [WACZ] file that was created at `collections/example/example.wacz`. 
 
 That's not a terribly interesting example, so use the example config to create a new one:
 
@@ -37,3 +38,4 @@ Read the browsertrix-crawler [documentation] for all the options you can put in 
 
 [browsertrix-crawler]: https://github.com/webrecorder/browsertrix-crawler
 [documentation]: https://github.com/webrecorder/browsertrix-crawler/blob/main/README.md
+[WACZ]: https://specs.webrecorder.net/wacz/latest/

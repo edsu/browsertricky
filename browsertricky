@@ -1,5 +1,18 @@
 #!/bin/bash
 
 VERSION=latest
-docker pull webrecorder/browsertrix-crawler:$VERSION
-docker run -p 9037:9037 -it -v $PWD:/crawls/ webrecorder/browsertrix-crawler:$VERSION crawl --config /crawls/config/$1.yaml
+
+podman=`which podman`
+docker=`which docker`
+
+if [ -n "$podman" ]; then
+  engine=$podman
+elif [ -n "$docker" ]; then
+  engine=$docker
+else
+  echo "Please install docker or podman..."
+  exit 1
+fi
+
+$engine pull webrecorder/browsertrix-crawler:$VERSION
+$engine run -p 9037:9037 -it --rm -v $PWD:/crawls/ webrecorder/browsertrix-crawler:$VERSION crawl --config /crawls/config/$1.yaml
