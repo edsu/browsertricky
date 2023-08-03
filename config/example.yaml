@@ -1,5 +1,6 @@
 collection: example
 generateWACZ: true
 screencastPort: 9037
+logging: stats,pywb,behaviors,behaviors-debug
 seeds:
   - url: https://example.com/
