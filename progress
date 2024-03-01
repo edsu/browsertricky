@@ -6,4 +6,4 @@ pages=`cat collections/$1/logs/crawl*.log | grep crawlStatus | jq -r '"\(.detail
 
 size=`du -sh collections/$1/ | cut -f 1 -d "	"`
 
-echo "$pages [$size]"
+echo "$1: $pages [$size]"
