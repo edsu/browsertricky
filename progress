@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# usage: progress <collection-name>
+
+pages=`cat collections/$1/logs/crawl*.log | grep crawlStatus | jq -r '"\(.details.crawled)/\(.details.total)"' | tail -1`
+
+size=`du -sh collections/$1/ | cut -f 1 -d "	"`
+
+echo "$pages [$size]"
