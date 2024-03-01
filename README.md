@@ -34,8 +34,19 @@ $ ./browsertricky mysite
 
 If you open http://localhost:9037 while the crawl is underway you should see a screencast of the browser.
 
+You can also see what the progress is:
+
+```
+$ ./progress mysite
+mysite: 595/2517 [254M]
+```
+
+If you would like to write your own [custom behaviors] put them in the `custom-behaviors` directory.
+
 Read the browsertrix-crawler [documentation] for all the options you can put in your YAML configuration files. There are quite a few!
 
 [browsertrix-crawler]: https://github.com/webrecorder/browsertrix-crawler
 [documentation]: https://github.com/webrecorder/browsertrix-crawler/blob/main/README.md
 [WACZ]: https://specs.webrecorder.net/wacz/latest/
+[custom behaviors]: https://github.com/webrecorder/browsertrix-crawler#additional-custom-behaviors
+
