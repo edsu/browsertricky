@@ -2,7 +2,10 @@
 
 # usage: progress <collection-name>
 
-pages=`cat collections/$1/logs/*.log | grep crawlStatus | jq -r '"\(.details.crawled)/\(.details.total) " + ((((.details.crawled) | tonumber) / ((.details.total) | tonumber) * 10000 | round / 100) | tostring) + "%"' | tail -1`
+pages=`cat collections/$1/logs/*.log \
+    | grep crawlStatus \
+    | jq -r '"\(.details.crawled)/\(.details.total) " + ((((.details.crawled) | tonumber) / ((.details.total) | tonumber) * 10000 | round / 100) | tostring) + "%"' \
+    | tail -1`
 
 size=`du -sh collections/$1/ | cut -f 1 -d "	"`
 
