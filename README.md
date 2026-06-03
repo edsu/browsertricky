@@ -1,9 +1,10 @@
 # browsertricky
 
-This is a tiny [bash] script and directory structure I've used to make it a bit easier
-to run and manage [browsertrix-crawler] for archiving websites without needing
-to remember the Docker incantation. It works with either Docker or Podman (and
-prefers Podman if it is available).
+This is a tiny [bash] script and directory structure I've used to make it a bit
+easier to run and manage [browsertrix-crawler] for archiving websites without
+needing to remember the Docker incantation, or run a full [browsertrix] service
+in Kubernetes. It works with either Docker or Podman (and prefers Podman if it
+is available).
 
 If you'd like to use it:
 
@@ -54,6 +55,8 @@ and how to write your own [custom behaviors] to control the behavior of the
 browser as it is crawling.
 
 [browsertrix-crawler]: https://github.com/webrecorder/browsertrix-crawler
+[browsertrix]: https://github.com/webrecorder/browsertrix
+[WACZ]: https://specs.webrecorder.net/wacz/latest/
 [WACZ]: https://specs.webrecorder.net/wacz/latest/
 [YAML configuration]: https://crawler.docs.browsertrix.com/user-guide/yaml-config/
 [custom behaviors]: https://crawler.docs.browsertrix.com/user-guide/behaviors/
