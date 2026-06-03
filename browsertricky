@@ -14,5 +14,9 @@ else
   exit 1
 fi
 
+
 $engine pull webrecorder/browsertrix-crawler:$VERSION
+
+python3 -mwebbrowser http://localhost:9037/
+
 $engine run -p 9037:9037 -it --rm -v $PWD:/crawls/ webrecorder/browsertrix-crawler:$VERSION crawl --config /crawls/config/$1.yaml
