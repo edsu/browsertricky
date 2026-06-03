@@ -1,6 +1,6 @@
 # browsertricky
 
-This is a tiny script and directory structure I've used to make it a bit easier
+This is a tiny [bash] script and directory structure I've used to make it a bit easier
 to run and manage [browsertrix-crawler] for archiving websites without needing
 to remember the Docker incantation. It works with either Docker or Podman (and
 prefers Podman if it is available).
@@ -59,3 +59,4 @@ browser as it is crawling.
 [custom behaviors]: https://crawler.docs.browsertrix.com/user-guide/behaviors/
 [documentation]: https://crawler.docs.browsertrix.com/
 [watch]: https://en.wikipedia.org/wiki/Watch_(command)
+[bash]: https://en.wikipedia.org/wiki/Bash_(Unix_shell)
