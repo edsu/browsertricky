@@ -41,10 +41,10 @@ $ ./progress mysite
 mysite: 595/2517 [254M]
 ```
 
-Or run it with watch to update every few seconds:
+Or run it with [watch] to update every few seconds:
 
 ```
-$ watch -n 10 ./progress
+$ watch -n 10 ./progress mysite
 ```
 
 Once it is finished you should see a WACZ file at `collections/mysite/mysite.wacz`
@@ -58,3 +58,4 @@ browser as it is crawling.
 [YAML configuration]: https://crawler.docs.browsertrix.com/user-guide/yaml-config/
 [custom behaviors]: https://crawler.docs.browsertrix.com/user-guide/behaviors/
 [documentation]: https://crawler.docs.browsertrix.com/
+[watch]: https://en.wikipedia.org/wiki/Watch_(command)
