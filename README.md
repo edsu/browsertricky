@@ -41,12 +41,12 @@ $ ./progress mysite
 mysite: 595/2517 [254M]
 ```
 
-If you would like to write your own [custom behaviors] put them in the `custom-behaviors` directory.
-
-Read the browsertrix-crawler [documentation] for all the options you can put in your YAML configuration files. There are quite a few!
+See the [documentation] for the available options for the [YAML configuration],
+and how to write your own [custom behaviors] to control the behavior of the
+browser as it is crawling.
 
 [browsertrix-crawler]: https://github.com/webrecorder/browsertrix-crawler
-[documentation]: https://github.com/webrecorder/browsertrix-crawler/blob/main/README.md
 [WACZ]: https://specs.webrecorder.net/wacz/latest/
-[custom behaviors]: https://github.com/webrecorder/browsertrix-crawler#additional-custom-behaviors
-
+[YAML configuration]: https://crawler.docs.browsertrix.com/user-guide/yaml-config/
+[custom behaviors]: https://crawler.docs.browsertrix.com/user-guide/behaviors/
+[documentation]: https://crawler.docs.browsertrix.com/
