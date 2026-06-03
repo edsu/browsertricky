@@ -47,6 +47,8 @@ Or run it with watch to update every few seconds:
 $ watch -n 10 ./progress
 ```
 
+Once it is finished you should see a WACZ file at `collections/mysite/mysite.wacz`
+
 See the [documentation] for the available options for the [YAML configuration],
 and how to write your own [custom behaviors] to control the behavior of the
 browser as it is crawling.
