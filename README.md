@@ -55,7 +55,7 @@ and how to write your own [custom behaviors] to control the behavior of the
 browser as it is crawling.
 
 [browsertrix-crawler]: https://github.com/webrecorder/browsertrix-crawler
-[browsertrix]: https://github.com/webrecorder/browsertrix
+[browsertrix]: https://webrecorder.net/browsertrix/
 [WACZ]: https://specs.webrecorder.net/wacz/latest/
 [WACZ]: https://specs.webrecorder.net/wacz/latest/
 [YAML configuration]: https://crawler.docs.browsertrix.com/user-guide/yaml-config/
